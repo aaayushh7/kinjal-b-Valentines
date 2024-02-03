@@ -12,11 +12,53 @@
 	</style>
 	<link href="css/default.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="module" src="https://unpkg.com/@dotlottie/player-component@1.0.0/dist/dotlottie-player.js"></script>
 	<script type="text/javascript" src="js/garden.js"></script>
 	<script type="text/javascript" src="js/functions.js"></script>
 </head>
+<style>
+	.spinner {
+	  background-color: rgb(0, 0, 0) !important;
+	  opacity: 1;
+	  position: fixed;
+	  align-items: center;
+	  display: flex;
+	  height: 100vh;
+	  left: 0;
+	  right: 0;
+	  top: 0;
+	  justify-content: center;
+	  width: 100%;
+	  transition: opacity 0.2s ease-out;
+	  z-index: 90;
+	}
+  
+	.hide {
+	  opacity: 0;
+  
+	}
+  </style>
+  
+  <script>
+	setTimeout(function () {
+	  var spinner = document.getElementById('spinner');
+	  spinner.classList.add('hide');
+  
+	  setTimeout(function () {
+		spinner.style.display = 'none';
+
+		
+	  }, 1000);
+	}, 3000);
+  
+  </script>
+  
 
 <body>
+	<div id="spinner" class="spinner">
+
+		<dotlottie-player autoplay mode="normal" src="./Animation - 1706969799335.lottie"
+		  style="width: 320px;height:320px;"></dotlottie-player></div>
 <div id="mainDiv">
 	<div id="content">
 		<div id="code">
