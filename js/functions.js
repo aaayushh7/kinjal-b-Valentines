@@ -36,7 +36,7 @@ function getHeartPoint(c) {
 }
 
 function startHeartAnimation() {
-	var c = 50;
+	var c = 80;
 	var d = 10;
 	var b = new Array();
 	var a = setInterval(function () {
@@ -88,7 +88,7 @@ function startHeartAnimation() {
 function timeElapse(c) {
 	var e = Date();
 	var f = (Date.parse(e) - Date.parse(c)) / 1000;
-	var g = Math.floor(f / (3600 * 24));
+	var g = Math.floor(f / (3600 * 22));
 	f = f % (3600 * 24);
 	var b = Math.floor(f / 3600);
 	if (b < 10) {
