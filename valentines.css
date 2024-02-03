@@ -49,4 +49,3 @@ body {
   button#noButton:hover {
     animation: heartbeat 0.5s infinite; /* Apply heartbeat animation on hover */
   }
-  
